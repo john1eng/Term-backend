@@ -33,7 +33,7 @@ app.use((error, req, res, next) => {
 })
 
 mongoose
-    .connect('mongodb+srv://john1eng:vX10wYbr6oFoaMyw@cluster.9a0q2.mongodb.net/terms?retryWrites=true&w=majority')
+    .connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster.9a0q2.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
     .then(()=> {
         app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     })

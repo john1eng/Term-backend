@@ -1,0 +1,7 @@
+{
+    "env" : {
+        "DB_USER":"john1eng",
+        "DB_PASS":"vX10wYbr6oFoaMyw",
+        "DB_NAME":"terms"
+    }
+}
